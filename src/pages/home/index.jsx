@@ -1,5 +1,31 @@
 import { Product } from "../../components";
 import main_banner from "../../assets/images/main-banner@3x.png";
+import introduction from "../../assets/images/introduction-bg@3x.png";
+import producticon_01 from "../../assets/images/producticon-01.png";
+import best_image_01 from "../../assets/images/best-image-01@3x.png";
+import producticon_02 from "../../assets/images/producticon-02.png";
+import best_image_02 from "../../assets/images/best-image-02@3x.png";
+import producticon_03 from "../../assets/images/producticon-03.png";
+import best_image_03 from "../../assets/images/best-image-03@3x.png";
+import object_01 from "../../assets/images/object-01.png";
+import object_06 from "../../assets/images/object-06.png";
+import object_02 from "../../assets/images/object-02.png";
+import object_03 from "../../assets/images/object-03.png";
+import object_04 from "../../assets/images/object-04.png";
+import object_05 from "../../assets/images/object-05.png";
+import object_07 from "../../assets/images/object-06.png";
+import img from "../../assets/images/img.png";
+import news_object_02 from "../../assets/images/news-object-02.png";
+import news_object_03 from "../../assets/images/news-object-03.png";
+import news_img_01 from "../../assets/images/news-img-01.png";
+import news_object_01 from "../../assets/images/news-object-01.png";
+import news_object_04 from "../../assets/images/news-object-04.png";
+import img_20 from "../../assets/images/img-20.png";
+import news_object_05 from "../../assets/images/news-object-05.png";
+import video_object_05 from "../../assets/images/video-object-05.png";
+import video_object_06 from "../../assets/images/video-object-06.png";
+import video_object_07 from "../../assets/images/video-object-07.png";
+
 export const HomePage = () => {
   return (
     <main>
@@ -10,7 +36,9 @@ export const HomePage = () => {
           className="max-w-12xl bg-cover 2xl:h-full w-full"
         />
       </div>
-      <div className="bg-[url('./src/assets/images/introduction-bg@3x.png')] px-10 py-32 max-sm:py-16 bg-cover bg-no-repeat bg-center flex flex-col gap-12 items-start justify-center">
+      <div
+        className={`bg-introduction-bg px-10 py-32 max-sm:py-16 bg-cover bg-no-repeat bg-center flex flex-col gap-12 items-start justify-center`}
+      >
         <div className="max-w-8xl w-full m-auto flex flex-col gap-8 px-4">
           <h1 className="font-extrabold text-5xl text-white leading-tight tracking-[5px] max-sm:text-center max-sm:text-4xl">
             WHAT HAPPENED!
@@ -36,10 +64,10 @@ export const HomePage = () => {
         <div className="max-w-8xl w-full m-auto flex flex-row max-sm:flex-col gap-y-20">
           <div className="relative">
             <img
-              src="./src/assets/images/producticon-01.png"
+              src={producticon_01}
               className="absolute -top-10 left-0 size-20"
             />
-            <img src="./src/assets/images/best-image-01@3x.png" className="" />
+            <img src={best_image_01} className="" />
             <button className="active:bg-[#e4e4e4] absolute -bottom-8 left-1/2 -translate-x-1/2 bg-white border border-black flex flex-row justify-between items-center font-bold text-black px-3 py-2 gap-2 w-3/4">
               <span className="flex-2 text-start max-lg:leading-4">
                 How to create mobile-optimized
@@ -51,10 +79,10 @@ export const HomePage = () => {
           </div>
           <div className="relative">
             <img
-              src="./src/assets/images/producticon-02.png"
+              src={producticon_02}
               className="absolute -top-10 left-0 size-20"
             />
-            <img src="./src/assets/images/best-image-02@3x.png" className="" />
+            <img src={best_image_02} className="" />
             <button className="active:bg-[#e4e4e4] absolute -bottom-8 left-1/2 -translate-x-1/2 bg-white border border-black flex flex-row justify-between items-center font-bold text-black px-3 py-2 gap-2 w-3/4">
               <span className="flex-2 text-start max-lg:leading-4">
                 How to create mobile-optimized
@@ -66,10 +94,10 @@ export const HomePage = () => {
           </div>
           <div className="relative">
             <img
-              src="./src/assets/images/producticon-03.png"
+              src={producticon_03}
               className="absolute -top-10 left-0 size-20"
             />
-            <img src="./src/assets/images/best-image-03@3x.png" className="" />
+            <img src={best_image_03} className="" />
             <button className="active:bg-[#e4e4e4] absolute -bottom-8 left-1/2 -translate-x-1/2 bg-white border border-black flex flex-row justify-between items-center font-bold text-black px-3 py-2 gap-2 w-3/4">
               <span className="flex-2 text-start max-lg:leading-4">
                 How to create mobile-optimized
@@ -96,33 +124,21 @@ export const HomePage = () => {
       <div className="bg-[#0565bb] w-full ">
         <div className="flex flex-col p-20 py-32 gap-12 relative overflow-hidden max-w-12xl m-auto max-lg:px-2">
           <img
-            src="./src/assets/images/object-01.png"
+            src={object_01}
             className="absolute top-36 left-[10%] z-0 max-md:left-4 max-sm:-left-[25%]"
           />
+          <img src={object_06} className="absolute bottom-28 left-0 z-0" />
+          <img src={object_07} className="absolute bottom-28 left-48 z-0" />
           <img
-            src="./src/assets/images/object-06.png"
-            className="absolute bottom-28 left-0 z-0"
-          />
-          <img
-            src="./src/assets/images/object-07.png"
-            className="absolute bottom-28 left-48 z-0"
-          />
-          <img
-            src="./src/assets/images/object-02.png"
+            src={object_02}
             className="absolute top-10 right-60 z-0 max-lg:right-[5%] max-sm:-right-[20%]"
           />
           <img
-            src="./src/assets/images/object-03.png"
+            src={object_03}
             className="absolute top-28 right-44 z-0 max-lg:right-[0%] max-sm:-right-[25%]"
           />
-          <img
-            src="./src/assets/images/object-04.png"
-            className="absolute bottom-28 -right-20 z-0"
-          />
-          <img
-            src="./src/assets/images/object-05.png"
-            className="absolute bottom-28 right-20 z-0"
-          />
+          <img src={object_04} className="absolute bottom-28 -right-20 z-0" />
+          <img src={object_05} className="absolute bottom-28 right-20 z-0" />
 
           <div className="w-full m-auto flex flex-col justify-center items-center gap-8 px-4 z-30">
             <h1 className="font-bold text-5xl leading-tight tracking-[5px] text-[#fcd32a] max-sm:text-center max-sm:text-4xl">
@@ -141,7 +157,7 @@ export const HomePage = () => {
             </div>
             <div className="flex flex-row gap-1 px-1 max-sm:flex-col">
               <div className="flex-1 bg-[#f86400] flex justify-center items-center">
-                <img src="./src/assets/images/img.png" className="bg-cover" />
+                <img src={img} className="bg-cover" />
               </div>
               <div className="flex-1">
                 <div className="bg-white h-full flex-1 flex flex-col justify-center gap-5 px-10 py-5 max-lg:px-5">
@@ -169,14 +185,8 @@ export const HomePage = () => {
       <div className="bg-[#fccb05] py-32 w-full flex flex-col overflow-hidden">
         <div className="flex flex-col p-32 pt-0 gap-12 relative max-sm:p-10">
           <div className="absolute -top-20 right-10 flex flex-col gap-5">
-            <img
-              src="./src/assets/images/news-object-03.png"
-              className="size-24 max-sm:size-16"
-            />
-            <img
-              src="./src/assets/images/news-object-02.png"
-              className="size-28 max-sm:size-20"
-            />
+            <img src={news_object_03} className="size-24 max-sm:size-16" />
+            <img src={news_object_02} className="size-28 max-sm:size-20" />
           </div>
           <div className="w-full m-auto flex flex-col justify-center items-center gap-8 px-4 z-30">
             <h1 className="font-bold text-5xl leading-tight tracking-[5px] text-[#110e03] max-sm:text-center max-sm:text-4xl">
@@ -197,18 +207,15 @@ export const HomePage = () => {
             <h1 className="text-5xl font-bold text-black w-1/2 text-center">
               WHPN ISSUE
             </h1>
+            <img src={news_img_01} className="size-24" />
             <img
-              src="./src/assets/images/news-img-01.png"
-              className="size-24"
-            />
-            <img
-              src="./src/assets/images/news-object-01.png"
+              src={news_object_01}
               className="absolute -bottom-14 -right-5 size-32 z-10 max-sm:size-20 max-sm:-bottom-6"
             />
           </div>
           <div className="flex flex-col border border-black relative">
             <img
-              src="./src/assets/images/news-object-04.png"
+              src={news_object_04}
               className="absolute -top-10 left-5 max-sm:left-0 max-sm:h-16 max-sm:w-24  max-sm:-top-8"
             />
             <div className="bg-black">
@@ -216,10 +223,7 @@ export const HomePage = () => {
                 B BRAND
               </h1>
             </div>
-            <img
-              src="./src/assets/images/img-20.png"
-              className="bg-cover h-full"
-            />
+            <img src={img_20} className="bg-cover h-full" />
           </div>
           <div className="flex flex-col border border-black">
             <div className="bg-black">
@@ -227,10 +231,7 @@ export const HomePage = () => {
                 C BRAND
               </h1>
             </div>
-            <img
-              src="./src/assets/images/img-20.png"
-              className="bg-cover h-full"
-            />
+            <img src={img_20} className="bg-cover h-full" />
           </div>
           <div className="flex flex-col border border-black relative">
             <div className="bg-[#ff5500]">
@@ -238,12 +239,9 @@ export const HomePage = () => {
                 D BRAND
               </h1>
             </div>
+            <img src={img_20} className="bg-cover h-full" />
             <img
-              src="./src/assets/images/img-20.png"
-              className="bg-cover h-full"
-            />
-            <img
-              src="./src/assets/images/news-object-05.png"
+              src={news_object_05}
               className="absolute -bottom-12 -right-5 max-sm:size-20 max-sm:-bottom-10"
             />
           </div>
@@ -253,24 +251,21 @@ export const HomePage = () => {
                 E BRAND
               </h1>
             </div>
-            <img
-              src="./src/assets/images/img-20.png"
-              className="bg-cover h-full"
-            />
+            <img src={img_20} className="bg-cover h-full" />
           </div>
         </div>
       </div>
       <div className="max-w-12xl m-auto pt-32 pb-72 w-full flex flex-col relative gap-20 overflow-hidden mb-10 max-sm:mb-0">
         <img
-          src="./src/assets/images/video-object-05.png"
+          src={video_object_05}
           className="absolute -top-2 left-[10%] max-sm:size-20"
         />
         <img
-          src="./src/assets/images/video-object-07.png"
+          src={video_object_07}
           className="absolute top-36 right-[10%] max-sm:size-24 max-sm:-right-[10%] max-sm:top-[2%] max-lg:right-[5%] max-md:-right-[5%]"
         />
         <img
-          src="./src/assets/images/video-object-06.png"
+          src={video_object_06}
           className="absolute top-64 right-[16%] max-sm:size-20 max-sm:-right-[8%] max-sm:top-[13%] max-lg:right-[10%] max-md:right-[0%]"
         />
         <img

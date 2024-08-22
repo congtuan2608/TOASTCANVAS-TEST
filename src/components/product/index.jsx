@@ -1,7 +1,9 @@
+import img_01 from "../../assets/images/img-01.png";
+
 export const Product = (props) => {
   return (
     <div className="flex flex-col gap-1">
-      <img src={props?.url ?? "./src/assets/images/img-01.png"} className="" />
+      <img src={props?.url ?? img_01} className="" />
       <div>
         <span className="font-bold">[what happen] How to create</span>
       </div>

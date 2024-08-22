@@ -1,7 +1,9 @@
-import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { useForm } from "../../hooks";
-
+import naver_icon from "../../assets/images/naver-icon.png";
+import google_icon from "../../assets/images/google-icon.png";
+import facebook_icon from "../../assets/images/facebook-icon.png";
+import kakao_icon from "../../assets/images/kakao-icon.png";
 const validation = {
   email: {
     required: true,
@@ -78,16 +80,10 @@ export const LoginPage = () => {
           </form>
           <h1 className=" font-bold text-center">SNS 계정으로 로그인</h1>
           <div className="flex flex-row flex-1 justify-center gap-10">
-            <img src="./src/assets/images/naver-icon.png" className="size-12" />
-            <img src="./src/assets/images/kakao-icon.png" className="size-12" />
-            <img
-              src="./src/assets/images/facebook-icon.png"
-              className="size-12"
-            />
-            <img
-              src="./src/assets/images/google-icon.png"
-              className="size-12"
-            />
+            <img src={naver_icon} className="size-12" />
+            <img src={kakao_icon} className="size-12" />
+            <img src={facebook_icon} className="size-12" />
+            <img src={google_icon} className="size-12" />
           </div>
           <div>
             <button

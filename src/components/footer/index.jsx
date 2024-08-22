@@ -1,3 +1,6 @@
+import facebook_icon from "../../assets/images/facebook-icon.png";
+import snsicon_03 from "../../assets/images/snsicon-03.png";
+import naver_icon from "../../assets/images/naver-icon.png";
 export const Footer = () => {
   return (
     <footer className="max-w-12xl m-auto">
@@ -72,9 +75,9 @@ export const Footer = () => {
           </p>
         </div>
         <div className="flex flex-row flex-1 justify-end gap-10 max-md:justify-center">
-          <img src="./src/assets/images/naver-icon.png" className="size-8" />
-          <img src="./src/assets/images/facebook-icon.png" className="size-8" />
-          <img src="./src/assets/images/snsicon-03.png" className="size-8" />
+          <img src={naver_icon} className="size-8" />
+          <img src={facebook_icon} className="size-8" />
+          <img src={snsicon_03} className="size-8" />
         </div>
       </div>
     </footer>
