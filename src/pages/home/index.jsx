@@ -1,6 +1,6 @@
 import { Product } from "../../components";
-import main_banner from "../../assets/images/main-banner@3x.png";
 import introduction from "../../assets/images/introduction-bg@3x.png";
+import main_banner from "../../assets/images/main-banner@3x.png";
 import producticon_01 from "../../assets/images/producticon-01.png";
 import best_image_01 from "../../assets/images/best-image-01@3x.png";
 import producticon_02 from "../../assets/images/producticon-02.png";
@@ -13,7 +13,7 @@ import object_02 from "../../assets/images/object-02.png";
 import object_03 from "../../assets/images/object-03.png";
 import object_04 from "../../assets/images/object-04.png";
 import object_05 from "../../assets/images/object-05.png";
-import object_07 from "../../assets/images/object-06.png";
+import object_07 from "../../assets/images/object-07.png";
 import img from "../../assets/images/img.png";
 import news_object_02 from "../../assets/images/news-object-02.png";
 import news_object_03 from "../../assets/images/news-object-03.png";
@@ -25,6 +25,12 @@ import news_object_05 from "../../assets/images/news-object-05.png";
 import video_object_05 from "../../assets/images/video-object-05.png";
 import video_object_06 from "../../assets/images/video-object-06.png";
 import video_object_07 from "../../assets/images/video-object-07.png";
+import video_object_01 from "../../assets/images/video-object-01.png";
+import video_object_02 from "../../assets/images/video-object-02.png";
+import video_object_03 from "../../assets/images/video-object-03.png";
+import video_object_04 from "../../assets/images/video-object-04.png";
+import video_object_08 from "../../assets/images/video-object-08.png";
+import video_object_09 from "../../assets/images/video-object-09.png";
 
 export const HomePage = () => {
   return (
@@ -37,9 +43,14 @@ export const HomePage = () => {
         />
       </div>
       <div
-        className={`bg-introduction-bg px-10 py-32 max-sm:py-16 bg-cover bg-no-repeat bg-center flex flex-col gap-12 items-start justify-center`}
+        className={`px-10 py-32 max-sm:py-16 flex flex-col gap-12 items-start justify-center relative`}
       >
-        <div className="max-w-8xl w-full m-auto flex flex-col gap-8 px-4">
+        <img
+          src={introduction}
+          alt=""
+          className="absolute bg-cover w-full h-full bg-center left-0 right-0 z-0"
+        />
+        <div className="max-w-8xl w-full m-auto flex flex-col gap-8 px-4 z-10">
           <h1 className="font-extrabold text-5xl text-white leading-tight tracking-[5px] max-sm:text-center max-sm:text-4xl">
             WHAT HAPPENED!
           </h1>
@@ -269,27 +280,27 @@ export const HomePage = () => {
           className="absolute top-64 right-[16%] max-sm:size-20 max-sm:-right-[8%] max-sm:top-[13%] max-lg:right-[10%] max-md:right-[0%]"
         />
         <img
-          src="./src/assets/images/video-object-04.png"
+          src={video_object_04}
           className="absolute top-1/4 -left-[19%] max-sm:size-36 max-sm:top-1/3 max-sm:-left-[15%]"
         />
         <img
-          src="./src/assets/images/video-object-09.png"
+          src={video_object_09}
           className="absolute top-1/2 -right-[9%] max-sm:top-1/3 max-sm:size-40 max-sm:-right-[20%]"
         />
         <img
-          src="./src/assets/images/video-object-08.png"
+          src={video_object_08}
           className="absolute bottom-0 -right-[10%] max-sm:size-60 max-sm:bottom-[10%] max-sm:-right-[30%] max-lg:size-80"
         />
         <img
-          src="./src/assets/images/video-object-03.png"
+          src={video_object_03}
           className="absolute bottom-48 left-[11%] max-sm:-left-[5%] max-sm:size-20 max-sm:bottom-56 max-lg:size-24 max-lg:bottom-52 max-lg:left-[8%]"
         />
         <img
-          src="./src/assets/images/video-object-01.png"
+          src={video_object_01}
           className="absolute bottom-0 left-[15%] max-sm:w-40 max-sm:bottom-[8%] max-sm:left-[5%] max-lg:w-80"
         />
         <img
-          src="./src/assets/images/video-object-02.png"
+          src={video_object_02}
           className="absolute bottom-36 right-1/3 max-sm:size-10 max-sm:bottom-52"
         />
         <div className="w-full m-auto flex flex-col justify-center items-center gap-8 px-4 z-30">
