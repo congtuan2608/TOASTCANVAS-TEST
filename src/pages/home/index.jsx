@@ -31,6 +31,7 @@ import video_object_03 from "../../assets/images/video-object-03.png";
 import video_object_04 from "../../assets/images/video-object-04.png";
 import video_object_08 from "../../assets/images/video-object-08.png";
 import video_object_09 from "../../assets/images/video-object-09.png";
+import video from "../../assets/images/video.png";
 
 export const HomePage = () => {
   return (
@@ -316,7 +317,7 @@ export const HomePage = () => {
           </button>
         </div>
         <div className="flex justify-center items-center z-10">
-          <img src="./src/assets/images/video.png" className="" />
+          <img src={video} className="" />
         </div>
       </div>
     </main>
