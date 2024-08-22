@@ -1,11 +1,11 @@
 import { Product } from "../../components";
-
+import main_banner from "../../assets/images/main-banner@3x.png";
 export const HomePage = () => {
   return (
     <main>
       <div className="bg-[#ea4913] xl:h-[50rem] flex justify-center items-center">
         <img
-          src="./src/assets/images/main-banner@3x.png"
+          src={main_banner}
           alt=""
           className="max-w-12xl bg-cover 2xl:h-full w-full"
         />

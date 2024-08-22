@@ -28,9 +28,6 @@ const validation = {
   contact: {
     type: "string",
   },
-  contact: {
-    type: "string",
-  },
   termsOfUse: {
     required: true,
   },
