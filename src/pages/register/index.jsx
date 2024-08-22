@@ -45,8 +45,6 @@ export const RegisterPage = () => {
   const navigate = useNavigate();
   const form = useForm(initialState, validation);
 
-  console.log(form.errors);
-
   const onRegister = (e) => {
     e.preventDefault();
     form.onSubmit((val) => {
@@ -54,14 +52,13 @@ export const RegisterPage = () => {
       form.reset();
     });
   };
-  console.log(form.isValid);
 
   return (
     <main>
       <div className="flex justify-center items-center py-20">
         <div className="flex flex-col gap-10 w-1/4 min-w-80">
           <h1 className="text-[#0565bb] text-5xl font-bold text-center">
-            Welcome!
+            JOIN US
           </h1>
 
           <form action="" onSubmit={onRegister} className="flex flex-col gap-5">
@@ -209,12 +206,7 @@ export const RegisterPage = () => {
 
             <button
               type="submit"
-              disabled={form.isValid}
-              className={`bg-[#0565bb] p-3 text-white hover:bg-[#0566bbdf] active:bg-[#0566bbb6] ${
-                form.isValid
-                  ? "bg-slate-400 hover:bg-slate-400 active:bg-slate-400"
-                  : ""
-              }`}
+              className={`bg-[#0565bb] p-3 text-white hover:bg-[#0566bbdf] active:bg-[#0566bbb6] `}
             >
               가입하기
             </button>

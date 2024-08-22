@@ -63,8 +63,8 @@ export const Footer = () => {
           </ul>
         </div>
       </div>
-      <div className="flex flex-row w-full justify-between p-10 border-t border-[#f4f4f4] max-md:flex-col gap-y-4">
-        <div className="flex flex-col max-sm:gap-2">
+      <div className="flex flex-row w-full justify-between p-10 border-t border-[#f4f4f4] max-md:flex-col gap-y-4 items-center gap-x-5">
+        <div className="flex flex-col max-sm:gap-2 flex-1">
           <p className="text-[#a9a9a9] text-sm">
             © 2020-2021 what happened corp l (주) 왓헤픈 ｜ 대표자 : 홍길동 ｜
             사업자 등록번호 : 356-00-00000 ㅣ test0101@what happened.co.kr
@@ -74,7 +74,7 @@ export const Footer = () => {
             이용약관 l 개인정보처리방침
           </p>
         </div>
-        <div className="flex flex-row flex-1 justify-end gap-10 max-md:justify-center">
+        <div className="flex flex-row justify-end gap-10 max-md:justify-center">
           <img src={naver_icon} className="size-8" />
           <img src={facebook_icon} className="size-8" />
           <img src={snsicon_03} className="size-8" />

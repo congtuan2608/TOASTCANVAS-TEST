@@ -26,7 +26,6 @@ export const LoginPage = () => {
     e.preventDefault();
     form.onSubmit((val) => {
       console.log(val);
-      form.reset();
     });
   };
   return (
@@ -36,7 +35,6 @@ export const LoginPage = () => {
           <h1 className="text-[#0565bb] text-5xl font-bold text-center">
             Welcome!
           </h1>
-
           <form action="" onSubmit={onLogin} className="flex flex-col gap-5">
             <div className="border-t-2 border-[#222222] w-full"></div>
             <div>
